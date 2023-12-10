@@ -26,7 +26,9 @@ const agregarALista = () => {
     if (tareas.completed) {
         tareas++;
     }
-    
+    const tareasRealizadas = tareas.filter((t) => t.completed).length;
+    realizadas.textContent = tareasRealizadas;
+    console.log(tareas); // ver en consola si se están agregando los obj en el array
     actualizar()
 };
 
@@ -46,54 +48,7 @@ const comprobar = (id) => {
 
 const actualizar = () => {
     total.innerHTML = tareas.length;
-    const tareasRealizadas = tareas.findIndex((t) => t.completed).length;
-    realizadas.innerHTML = tareasRealizadas;
 };
 
 agregarALista();
-
-/* const tarea = () => lista.innerHTML = tareas.map((tarea) => `<li>${tarea.nombre}</li>`).join('');
-tarea () */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* const agregarALista = () => {
-    let template = ''; // se declara con let
-    for (const tarea of tareas) {
-        template += `<li>${tarea}</li>`;
-    }
-    lista.innerHTML = template;
-}
- */
-
-/* const agregarALista = () => {
-let template = '';
-tareas.forEach ((tarea) => template += `<li>${tarea}</li>`);
-lista.innerHTML = template;
-} */
-
-
 
