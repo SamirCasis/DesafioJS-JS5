@@ -21,7 +21,7 @@ btnAgregar.addEventListener('click', () => {
 
 const agregarALista = () => {
     lista.innerHTML = tareas.map((t) =>
-        `<li>${t.id} ${t.nombre} <input type="checkbox" onclick="comprobar(${t.id})" ${t.completed ? 'checked' : ''}> <button onclick="borrar(${t.id})">X</button></li>`
+    `<li class="${t.completed ? 'completed' : ''}">${t.id} ${t.nombre} <input type="checkbox" onclick="comprobar(${t.id})" ${t.completed ? 'checked' : ''}> <button onclick="borrar(${t.id})">X</button></li>`
     ).join('');
     if (tareas.completed) {
         tareas++;

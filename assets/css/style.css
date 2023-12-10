@@ -60,3 +60,7 @@ li {
     text-align: end;
 }
 
+li.completed {
+    color: blue;
+    
+}
