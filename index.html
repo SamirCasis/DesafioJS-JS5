@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Todo List JS 5</title>
 </head>
+
 <body>
-<main id="consola">
-    <div>
-        <h1>Todo List</h1>
-    </div>
+    <main id="consola">
+        <div>
+            <h1>Todo List</h1>
+        </div>
 
-    <section>  
-        <input><button id="agregar">Agregar</button>
-    </section>
+        <section id="ingresar">
+            <input><button id="agregar">Agregar</button>
+        </section>
 
-    <article>
-        <ul type="none"></ul>
-        <p id="lista">Total = <span>0</span></p>
-        <p id="lista2"></p>
-        <p id="lista3"></p>
-        <p id="lista4"></p>
-    </article>
-  
-    
-</main>
-   
+        <section id="resumen">
+            <div id="contador">
+                <h3>Total = <span id="total">0</span></h3>
+                <h3>Realizadas = <span id="realizadas">0</span></h3>
+            </div>
+            <div id="lista">
+                <ul type="none"></ul>
+            </div>
+        </section>
+
+
+    </main>
+
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

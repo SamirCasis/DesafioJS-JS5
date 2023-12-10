@@ -2,16 +2,20 @@
     background-color: azure;
     padding: 30px;
     border-radius: solid blue 3px;
-    width: 40%;
+    width: 50%;
 }
 
 div {
     text-align: center;
 }
 
-section {
+#ingresar {
     display: flex;
     justify-content: center;
+}
+
+input {
+    width: 40%;
 }
 
 #agregar {
@@ -22,6 +26,31 @@ section {
     background-color: green;
 }
 
-input {
-    width: 40%;
+
+
+#resumen {
+    display: flex;
+    margin-top: 20px;
 }
+
+#contador {
+    margin-right: 40px;
+    margin-left: 20px;
+    text-align: start;
+}
+
+#lista {
+   background-color: rgb(154, 195, 195);
+   margin-left: 50px;
+   width: 60%;
+   padding-right: 30px;
+}
+
+ul {
+  justify-content: center;  
+}
+
+li {
+    text-align: end;
+}
+
