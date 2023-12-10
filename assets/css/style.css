@@ -1,0 +1,27 @@
+#consola {
+    background-color: azure;
+    padding: 30px;
+    border-radius: solid blue 3px;
+    width: 40%;
+}
+
+div {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#agregar {
+    margin-left: 10px;
+    width: 20%;
+    padding: 5px;
+    color: white;
+    background-color: green;
+}
+
+input {
+    width: 40%;
+}
